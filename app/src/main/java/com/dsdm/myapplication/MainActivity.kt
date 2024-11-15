@@ -1,6 +1,7 @@
 package com.dsdm.myapplication
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -58,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
         val res: Double = n1 + n2
         resultado.text = "O resultado é igual a: $res"
+        resultado.visibility = View.VISIBLE
     }
 
     fun subtrair(inputNum1: EditText, inputNum2: EditText, resultado: TextView){
@@ -66,6 +68,7 @@ class MainActivity : AppCompatActivity() {
 
         val res: Double = n1 - n2
         resultado.text = "O resultado é igual a: $res"
+        resultado.visibility = View.VISIBLE
     }
 
     fun multiplicar(inputNum1: EditText, inputNum2: EditText, resultado: TextView){
@@ -74,6 +77,7 @@ class MainActivity : AppCompatActivity() {
 
         val res: Double = n1 * n2
         resultado.text = "O resultado é igual a: $res"
+        resultado.visibility = View.VISIBLE
     }
 
     fun dividir(inputNum1: EditText, inputNum2: EditText, resultado: TextView){
@@ -85,6 +89,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             val res: Double = n1 / n2
             resultado.text = "O resultado é igual a: $res"
+            resultado.visibility = View.VISIBLE
         }
     }
 }
