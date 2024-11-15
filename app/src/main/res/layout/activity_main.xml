@@ -32,14 +32,15 @@
 
     <LinearLayout
         android:id="@+id/appBody"
-        android:layout_width="273dp"
-        android:layout_height="428dp"
+        android:layout_width="283dp"
+        android:layout_height="170dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61">
+        app:layout_constraintVertical_bias="0.421">
 
         <TextView
             android:id="@+id/textView2"
@@ -77,36 +78,41 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:visibility="gone" />
 
-        <LinearLayout
-            android:id="@+id/buttonsLayout"
-            android:layout_width="match_parent"
-            android:layout_height="208dp"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnSomar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Somar" />
-
-            <Button
-                android:id="@+id/btnSubtrair"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Subtrair" />
-
-            <Button
-                android:id="@+id/btnMultiplicar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Multiplicar" />
-
-            <Button
-                android:id="@+id/btnDividir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dividir" />
-        </LinearLayout>
-
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="274dp"
+        android:layout_height="207dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBody">
+
+        <Button
+            android:id="@+id/btnSomar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Somar" />
+
+        <Button
+            android:id="@+id/btnSubtrair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtrair" />
+
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicar" />
+
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dividir" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
